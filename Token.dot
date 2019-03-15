@@ -1,0 +1,14 @@
+strict digraph {
+  constructor
+  _mint
+  timelockTransfer [color=purple]
+  transfer
+  timelockMint
+  name [color=yellow]
+  symbol [color=yellow]
+  decimals [color=yellow]
+  constructor -> _mint
+  timelockTransfer -> transfer
+  timelockMint -> _mint
+}
+

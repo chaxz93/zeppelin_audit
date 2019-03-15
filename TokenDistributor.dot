@@ -1,0 +1,18 @@
+strict digraph {
+  TokenDistributor
+  registerBeneficiary
+  push
+  decreaseBenefit
+  payAllBeneficiaries
+  _paySingleBeneficiary [color=purple]
+  transfer
+  getNumberOfBeneficiaries [color=yellow]
+  getAmount [color=yellow]
+  owner
+  tokenAddress
+  totalAmount [color=yellow]
+  registerBeneficiary -> push
+  payAllBeneficiaries -> _paySingleBeneficiary
+  _paySingleBeneficiary -> transfer
+}
+
